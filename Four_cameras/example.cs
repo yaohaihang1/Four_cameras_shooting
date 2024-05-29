@@ -1079,74 +1079,74 @@ namespace example
 
         static void Main(string[] args)
         {
-            while (true)
-            {
-
-                //修改相机分辨率
-                int width = 1920;
-                int height = 1200;
-
-                //开辟内存
-                float[] pointcloud1 = new float[width * height * 3];
-                float[] pointcloud2 = new float[width * height * 3];
-                float[] pointcloud3 = new float[width * height * 3];
-                float[] pointcloud4 = new float[width * height * 3];
-
-                byte[] brightness1 = new byte[width * height];
-                byte[] brightness2 = new byte[width * height];
-                byte[] brightness3 = new byte[width * height];
-                byte[] brightness4 = new byte[width * height];
-
-                float[] depth1 = new float[width * height];
-                float[] depth2 = new float[width * height];
-                float[] depth3 = new float[width * height];
-                float[] depth4 = new float[width * height];
-
-                //四台相机ip
-                string ip1 = "192.168.3.63";
-                string ip2 = "192.168.3.97";
-                string ip3 = "192.168.3.63";
-                string ip4 = "192.168.3.97";
-
-
-                bool flag1 = camera_1(ip1, out bool flag11, ref brightness1, ref depth1, ref pointcloud1);
-                Console.WriteLine("flag1");
-                Console.WriteLine(flag1);
-
             
-                //string filename = "path_to_your_file.xyz"; 
-                //SaveXyzFile(filename, pointcloud1, width, height);
-                //Console.WriteLine(flag1);
+        
 
-                if (flag1 == true)
+            //修改相机分辨率
+            int width = 1920;
+            int height = 1200;
+
+            //开辟内存
+            float[] pointcloud1 = new float[width * height * 3];
+            float[] pointcloud2 = new float[width * height * 3];
+            float[] pointcloud3 = new float[width * height * 3];
+            float[] pointcloud4 = new float[width * height * 3];
+
+            byte[] brightness1 = new byte[width * height];
+            byte[] brightness2 = new byte[width * height];
+            byte[] brightness3 = new byte[width * height];
+            byte[] brightness4 = new byte[width * height];
+
+            float[] depth1 = new float[width * height];
+            float[] depth2 = new float[width * height];
+            float[] depth3 = new float[width * height];
+            float[] depth4 = new float[width * height];
+
+            //四台相机ip
+            string ip1 = "192.168.3.63";
+            string ip2 = "192.168.3.97";
+            string ip3 = "192.168.3.63";
+            string ip4 = "192.168.3.97";
+
+
+            bool flag1 = camera_1(ip1, out bool flag11, ref brightness1, ref depth1, ref pointcloud1);
+            Console.WriteLine("flag1");
+            Console.WriteLine(flag1);
+
+        
+            //string filename = "path_to_your_file.xyz"; 
+            //SaveXyzFile(filename, pointcloud1, width, height);
+            //Console.WriteLine(flag1);
+
+            if (flag1 == true)
+            {
+                
+                bool flag2 = camera_2(ip2, out bool flag22, ref brightness2, ref depth2, ref pointcloud2);
+                Console.WriteLine("flag2");
+                Console.WriteLine(flag2);
+
+                if (flag2 == true)
                 {
                     
-                    bool flag2 = camera_2(ip2, out bool flag22, ref brightness2, ref depth2, ref pointcloud2);
-                    Console.WriteLine("flag2");
-                    Console.WriteLine(flag2);
+                    bool flag3 = camera_3(ip3, out bool flag33, ref brightness3, ref depth3, ref pointcloud3);
+                    Console.WriteLine("flag3");
+                    Console.WriteLine(flag3);
 
-                    if (flag2 == true)
+                    if (flag3 == true)
                     {
                         
-                        bool flag3 = camera_3(ip3, out bool flag33, ref brightness3, ref depth3, ref pointcloud3);
-                        Console.WriteLine("flag3");
-                        Console.WriteLine(flag3);
-
-                        if (flag3 == true)
-                        {
-                            
-                            bool flag4 = camera_4(ip4, out bool flag44, ref brightness4, ref depth4, ref pointcloud4);
-                            Console.WriteLine("flag4");
-                            Console.WriteLine(flag4);
-                        }
-
+                        bool flag4 = camera_4(ip4, out bool flag44, ref brightness4, ref depth4, ref pointcloud4);
+                        Console.WriteLine("flag4");
+                        Console.WriteLine(flag4);
                     }
 
-
                 }
-                //Console.ReadKey();
-                //return;
+
+
             }
+            //Console.ReadKey();
+            //return;
+           
 
         }
     
