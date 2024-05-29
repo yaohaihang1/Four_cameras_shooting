@@ -1,0 +1,8 @@
+D:\haihang\c#\Four_cameras_shooting\Four_cameras\Four_cameras\bin\x64\Release\Four_cameras.exe.config
+D:\haihang\c#\Four_cameras_shooting\Four_cameras\Four_cameras\bin\x64\Release\Four_cameras.exe
+D:\haihang\c#\Four_cameras_shooting\Four_cameras\Four_cameras\bin\x64\Release\Four_cameras.pdb
+D:\haihang\c#\Four_cameras_shooting\Four_cameras\Four_cameras\obj\x64\Release\Four_cameras.csproj.AssemblyReference.cache
+D:\haihang\c#\Four_cameras_shooting\Four_cameras\Four_cameras\obj\x64\Release\Four_cameras.csproj.CoreCompileInputs.cache
+D:\haihang\c#\Four_cameras_shooting\Four_cameras\Four_cameras\obj\x64\Release\Four_cameras.csproj.CopyComplete
+D:\haihang\c#\Four_cameras_shooting\Four_cameras\Four_cameras\obj\x64\Release\Four_cameras.exe
+D:\haihang\c#\Four_cameras_shooting\Four_cameras\Four_cameras\obj\x64\Release\Four_cameras.pdb
